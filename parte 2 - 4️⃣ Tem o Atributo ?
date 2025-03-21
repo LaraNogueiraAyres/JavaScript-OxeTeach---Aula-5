@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <input type="text" id="inputCampo" disabled>
+    <button onclick="verificarAtributo()">Verificar</button>
+    <p id="mensagem"></p>
+
+    <script>
+        function verificarAtributo()
+        {
+            if (inputCampo.hasAttribute("disabled")) {
+                mensagem.innerHTML = "O campo está desativado."
+            } else mensagem.innerHTML = "O campo está ativo."
+        }
+    </script>
+</body>
+</html>
